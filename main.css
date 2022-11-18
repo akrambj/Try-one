@@ -25,13 +25,15 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 0;
+    padding-top: 10px;
     background-color: transparent;
+    padding-right: 200px;
+    margin-left: 120px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 120px;
     gap: 10px;
 }
 
@@ -40,9 +42,7 @@ header {
 }
 
 
-nav  {
-    margin-right: 200px;
-}
+
 
 nav ul {
     display: flex;
@@ -69,93 +69,6 @@ nav ul a:hover {
     transition-duration: 500ms;
 }
 
-
-
-@media (max-width:320px) {
-    
-    .logo {
-        margin-left: 20px;
-        gap: 5px;
-    }
-
-    .logo img {
-        width: 30px;
-    }
-
-    .logo h2 {
-        font-size: 1em;
-    }
-
-    nav {
-        margin-right: 10px;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-    nav ul a  {
-        font-size: 0.7em;
-    }
-}
-
-@media (min-width:324px) and  (max-width:400px) {
-    nav {
-        margin-right: 30px;
-    }
-
-    nav ul {
-        gap: 10px;
-    }
-}
-
-@media (min-width:401px) and (max-width:500px) {
-
-    .logo {
-        margin-left: 30px;
-    }
-
-    nav {
-        margin-left: 60px;
-    }
-
-    nav ul {
-        gap: 5px;
-    }
-
-    nav ul a {
-        font-size: 0.6em;
-    }
-
-}
-
-
-@media (min-width:501px) and (max-width:660px) {
-
-    .logo {
-        margin-left: 30px;
-    }
-
-    nav {
-        margin-right: 60px;
-    }
-
-    nav ul {
-        gap: 25px;
-    }
-
-    nav ul a {
-        font-size: 0.6em;
-    }
-
-}
-
-
-@media (min-width:661px) and (max-width:800px) {
-    
-    nav {
-        margin-right: 70px;
-    }
-}
 
 
 main {
@@ -191,76 +104,20 @@ main h5 span {
 
 
 
-main a img {
-    width: 150px;
+main a i {
+    font-size: 2em;
+    color: var(--blue);
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 #pic {
     margin-right: 170px;
 }
 
-
-
-@media (max-width:320px) {
-
-    main {
-        flex-direction:column-reverse ;
-        margin-top: 80px;
-    }
-
-    #pic img {
-        margin-left: -30px;
-        width: 150px;
-    }
-
-    main h2 {
-        font-size: 20px;
-        margin-left: -50px;
-    }
-
-    main h5 {
-        margin-top: 5px;
-        font-size: 10px;
-        line-height: 15.72px;
-        margin-left: -100px;
-    }
-
-    main a img {
-        display: none;
-    }
-}
-@media (min-width:321px) and (max-width:660px) {
-
-    main {
-        flex-direction:column-reverse ;
-        margin-top: 80px;
-    }
-
-    #pic img {
-        margin-left: -30px;
-        width: 150px;
-    }
-
-    main h2 {
-        font-size: 20px;
-        margin-left: -50px;
-    }
-
-    main h5 {
-        margin-top: 5px;
-        font-size: 10px;
-        line-height: 15.72px;
-        margin-left: -100px;
-    }
-
-    main a img {
-        display: none;
-    }
-}
-
-
 .projects {
     margin-top: 60px;
+    width: 100vw;
 }
 
 
@@ -279,7 +136,7 @@ main a img {
 
 .card {
     width: 50%;
-    height: 160px;
+    min-height: 160px;
     background-color: #3f45501e;
     margin: 40px auto;
     display: flex;
@@ -352,47 +209,10 @@ main a img {
     transition-duration: 100ms;
 }
 
-@media (max-width:320px) {
-    #head01 {
-        font-size: 20px;
-        margin-left: 60px;
-    }
 
-    .card {
-        flex-direction: column;
-        width: 270px;
-        height: 350px;
-        justify-content: center;
-        align-items: center;
-        padding: 20px auto;
-        gap: 15px;
-    }
-
-    .card img {
-        margin-left: 5px;
-        margin-top: 40px;
-    }
-
-    .card h3 {
-        margin: 5px auto;
-    }
-
-    .dtls {
-        gap: 5px;
-        justify-content: center;
-    }
-
-    .dtls a {
-        margin-right: 20px;
-    }
-
-    .container h5 {
-        margin: 5px 10px;
-    }
-    
-}
 
 .posts {
+    width: 100vw;
     margin-top: 100px;
     position: relative;
 }
@@ -473,6 +293,7 @@ main a img {
 }
 
 #sub {
+    width: 100vw;
     position: relative;
     margin-top: 250px;
     display: flex;
@@ -541,6 +362,7 @@ button a {
 
 
 footer {
+    width: 100vw;
     margin-top: 100px;
 }
 
@@ -573,4 +395,147 @@ footer {
 .icons i {
     margin-left: 5px;
     color: white;
+}
+
+
+@media (max-width:320px) {
+    header {
+        padding-right: 20px;
+        margin-left: 10px ;
+    }
+
+    .logo h2 {
+        font-size: 1em;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul a {
+        font-size: 0.7em;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        margin:100px 50px;
+    }
+
+    main img {
+        width: 200px;
+        margin-left: 10px ;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+        margin: 20px 5px;
+    }
+
+    main h5 {
+        font-size: 12px;
+        line-height: 17.72px;
+        margin-right: 50px;
+        
+    }
+
+    main a i {
+        margin-left: 20px;
+    }
+
+    #head01 {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card img {
+        width: 90px;
+        margin-top: 10px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .dtls {
+        margin-left: 50px;
+        gap: 30px;
+    }
+
+    .container h5 {
+        margin-left: 5px;
+    }
+
+    #head02 {
+        margin: 10px 10px;
+        font-size: 15px;
+        gap: 40px;
+    }
+
+    #head02 a {
+        font-size: 10px;
+    }
+
+    .imgs {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-left: -50px;
+        gap: 250px;
+    }
+
+    .details {
+        top: 265px;
+        left: -20;
+    }
+
+    #sub {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+    .txt04 {
+        margin-left: 10px;
+    }
+
+    .txt04 h1 {
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+
+    input {
+        margin-top: 10px;
+        margin-right: 0;
+        width: 300px;
+    }
+
+    button {
+        right: 20px;
+        top: 145px;
+        width: 100px;
+    }
+
+    button a {
+        font-size: 13px;
+    }
+
+    #copy-w {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #copy-w h4 {
+        margin-left: 0;
+        font-size: 9px;
+    }
+
+    .icons {
+        font-size: 1em;
+        margin: 5px auto;
+    }
 }
